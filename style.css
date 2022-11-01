@@ -21,27 +21,23 @@ body{
   border-radius: 15px;
   max-width: 550px;
   width: 100%;
+  min-height: 450px;
   display: flex;
+
 }
 
 .col, .card__img{
   width: 100%;
 }
-
 .col{
   padding: 2rem;
+
 }
 
-.card__img{
-  background-image: url(./images/image-product-desktop.jpg);
-  height: 500;
+.container__img{
+  object-fit: cover;
   width: 100%;
-  background-size: cover;
-  background-position: center 35%;
-  background-repeat:no-repeat;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-
+  height: 100% ;
 }
 
 .card__subtitle{
@@ -121,10 +117,5 @@ span{
   .card{
     flex-direction:column;
   }
-  .card__img{
-    height: 250px;
-    border-bottom-left-radius: unset;
-    border-top-right-radius: 15px;
 
-  }
 }
